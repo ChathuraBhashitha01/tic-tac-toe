@@ -6,15 +6,13 @@ import './style.css'
 export default function HomePage() {
     const [spacing, setSpacing] = React.useState(2);
 
-    const handleChange = (event) => {
-      setSpacing(Number(event.target.value));
-    };
-  
     const jsx = `
   <Grid container spacing={${spacing}}>
   `;
   
     return (
+        <div className='background'>
+        <h1 className='txtGameName'>Tic Tac Toe</h1>
       <Grid sx={{ flexGrow: 1 }} container spacing={2}>
         <Grid item xs={12}>
           <Grid className='firstGrid' container justifyContent="center" spacing={spacing}>
@@ -46,5 +44,6 @@ export default function HomePage() {
         
   
       </Grid>
+      </div>
     );
 }

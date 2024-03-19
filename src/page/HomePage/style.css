@@ -1,18 +1,41 @@
-*{
-    background-color: black;
+.container{
+    text-align: center;
 }
-.btnClick{
-    height: 140px;
-    width: 140px;
-    background-color: rgb(13, 2, 51);
-    border-radius: 20px;
-}
-.background{
+.title{
     margin-top: 50px;
-}
-.txtGameName{
     color: #fff;
-    margin-top: 0;
-    padding-left: 40%;
     font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.title span{
+    color: #26ffcb;
+    padding-left: 20px;
+}
+.btnRestart{
+    width: 150px;
+    height: 75px;
+    border: none;
+    color: #26ffcb;
+    font-size: 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color:rgb(2, 2, 38)
+}
+.boxes{
+    background-color:rgb(2, 2, 38) ;
+    border: solid 2px black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.board{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
